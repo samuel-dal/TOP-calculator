@@ -128,12 +128,13 @@ body{
     color: antiquewhite;
     cursor: pointer;
     box-shadow: var(--button-shadow);
+    border: none;
   }
 
-  button:not(button[value='plus']){
+  button:not(button[value='+']){
     height: 90%;
   }
-  button[value='plus']{
+  button[value='+']{
     height: 95%;
   }
 
