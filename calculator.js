@@ -132,7 +132,7 @@ const percentage = (isCalculate) => {
      return;
    } 
 
-   if (screenResult.clientWidth >  resultNum.clientWidth && stringEl.length <= 10) {//bug
+   if (screenResult.clientWidth >  resultNum.clientWidth && stringEl.length <= 1) {//bug
      resultSize = 4;
 
      for (let i = 0; i < changeStylesArr[0].length; i++){
@@ -369,4 +369,5 @@ dotBtn.addEventListener('mousedown', (event) => {
 
 document.addEventListener('mousedown', () => {
    resultDisplayBehavior();
+   console.log(resultSize);
 });
